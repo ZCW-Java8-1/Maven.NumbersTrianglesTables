@@ -7,7 +7,8 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetRange1A() {
         // : Given
-        String expected = "0123456789";
+        // given is wrong, should end in 10
+        String expected = "012345678910";
         int stop = 11;
 
         // : When
@@ -87,7 +88,8 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetRange3B() {
         // : Given
-        String expected = "100101103104105106107108109";
+        // given is wrong, missing 101
+        String expected = "100101102103104105106107108109";
         int start = 100;
         int stop = 110;
 
